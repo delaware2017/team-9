@@ -77,8 +77,7 @@
 										<input type="text" name="query" id="query" placeholder="Search" />
 									</form>
 								</section>
-							
-						<!-- Menu -->
+							<!-- Menu -->
 								<nav id="menu">
 									<header class="major">
 										<h2>Menu</h2>
@@ -89,7 +88,7 @@
 										<li>
 											<span class="opener">Categories</span>
 											<ul>
-												<li><a href="#">Academics</a></li>
+												<li><a href="admin.html">Academics</a></li>
 												<li><a href="#">STEM</a></li>
 												<li><a href="#">Art</a></li>
 												<li><a href="#">Community Service</a></li>
@@ -97,10 +96,9 @@
 											</ul>
 										</li>
 										<li><a href="elements.html">Analytics</a></li>
-										<li><a href="#">Student Nominees</a></li>
+										<li><a href="nominees.html">Student Nominees</a></li>
 										
 								</nav>
-
 
 							<!-- Section -->
 								<section>

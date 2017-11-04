@@ -26,16 +26,20 @@
 							<!-- Content -->
 								<section>
 									<header class="main">
-										<h1>Admin Page</h1>
+										<h1>Student Nominees</h1>
 									</header>
 									<h4>Here, you can see the nominees.</h4>
 									<p></p>
-									<h5>Unscored nominees</h5>
+									<h5>Nominees:</h5>
 									<ul>
 										
 										
 										
+										<li>Walt</li>
+										<li>Angel</li>
+										<li>Miriam</li>
 									</ul>
+
 									<h5>Ordered scored nominees</h5>
 									<table>
 										<tr>
@@ -43,15 +47,31 @@
 											<th>Score</th>
 										</tr>
 										<tr>
-											<th>Walt</th>
-											<th>14</th>
-										</tr>
-										<tr>
-											<th>Angel</th>
-											<th>17</th>
-										</tr>
-										<tr>
-											<th>
+
+									<?php 
+
+										$delimiter = '|';
+      									$students = file("data.txt");
+
+      									foreach ($students as $student) {
+									        $info = explode($delimiter, $student);
+									        
+									        $first_name = $info[0];
+								            $last_name = $info[1];
+								            
+									        print "
+									        <tr>
+											<th> $info[0] </th>
+											<th> $info[1] </th>
+											</tr>
+											";
+									        
+									      }
+      									
+									 ?>
+
+											<th>Miriam</th>
+											<th>18</th>
 										</tr>
 									</table>
 
@@ -82,7 +102,7 @@
 										<li>
 											<span class="opener">Categories</span>
 											<ul>
-												<li><a href="#">Academics</a></li>
+												<li><a href="admin.html">Academics</a></li>
 												<li><a href="#">STEM</a></li>
 												<li><a href="#">Art</a></li>
 												<li><a href="#">Community Service</a></li>
@@ -90,9 +110,10 @@
 											</ul>
 										</li>
 										<li><a href="elements.html">Analytics</a></li>
-										<li><a href="nominees.html">Student Nominees</a></li>
+										<li><a href="nominees.php">Student Nominees</a></li>
 										
 								</nav>
+
 
 							<!-- Section -->
 								<section>
