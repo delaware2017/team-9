@@ -326,30 +326,30 @@ fieldset {
 <content padding>
 
 <div class="container">  
-  <form id="contact" action="Nominee_thanks.html" method="post">
+  <form id="contact" action="Nominee_thanks.html" method="get">
     <h3>General Information</h3>
     <h4><b>Please provide us with the following information regarding yourself, the <b><i> NOMINATOR.</i></b></h4>
     <fieldset>
-      <input placeholder="Nominator's name (ex. John Doe)" type="text" tabindex="1" required autofocus>
+      <input placeholder="Nominator's name (ex. John Doe)" name="nominator_name" type="text" tabindex="1" required autofocus>
     </fieldset>
     <fieldset>
-      <input placeholder="Nominator's Email Address" type="email" tabindex="2" required>
+      <input placeholder="Nominator's Email Address" name="nominator_email" type="email" tabindex="2" required>
     </fieldset>
     <fieldset>
-      <input placeholder="Nominator's Phone Number" type="tel" tabindex="3" required>
+      <input placeholder="Nominator's Phone Number" name="nominator_tel" type="tel" tabindex="3" required>
     </fieldset>
     <h4><b>Please provide us with the following pieces of information regarding the <b><i> NOMINEE.</i></b></h4>    
     <fieldset>
-      <input placeholder="Nominee's First Name" type="text" tabindex="4" required autofocus>
+      <input placeholder="Nominee's First Name" name="first_name" type="text" tabindex="4" required autofocus>
     </fieldset>  
     <fieldset>
-      <input placeholder="Nominee's Last Name" type="text" tabindex="5" required autofocus>
+      <input placeholder="Nominee's Last Name" name="last_name" type="text" tabindex="5" required autofocus>
     </fieldset>
     <fieldset>
-      <input placeholder="Nominee's Email Address" type="email" tabindex="6" required>
+      <input placeholder="Nominee's Email Address" name="email" type="email" tabindex="6" required>
     </fieldset>
     <fieldset>
-      <input placeholder="Nominee's Phone Number" type="tel" tabindex="7" required>
+      <input placeholder="Nominee's Phone Number" name="tel" type="tel" tabindex="7" required>
     </fieldset>
 
     <h4><b>Please select which categories you have been Nominated for (Must Select At least 1):</b></h4> 
@@ -373,13 +373,13 @@ fieldset {
      <h4><b>Please attach a resume (accepted file types include .pdf/.doc/.docx)</b></h4>
 
     <fieldset>
-      <input type="file" id="test" name="test" accept=".pdf,.doc,.docx," required/>
+      <input type="file" id="file1" name="file1" accept=".pdf,.doc,.docx," required/>
     </fieldset>
 
     <h4><b>Please attach the most recent transcript (accepted file types include .pdf/.doc/.docx)</b></h4>
 
     <fieldset>
-      <input type="file" id="test1" name="test1" accept=".pdf,.doc,.docx," required/>
+      <input type="file" id="file2" name="file2" accept=".pdf,.doc,.docx," required/>
     </fieldset>
 
     <br>
@@ -413,15 +413,54 @@ fieldset {
     </ol>
     <br>
     <fieldset>
-      <input type="file" id="test2" name="test2" accept=".pdf,.doc,.docx," required/>
+      <input type="file" id="file3" name="file3" accept=".pdf,.doc,.docx," required/>
     </fieldset>
 
     <br>
     <fieldset>
-      <button name="submit" type="submit" id="contact-submit" value="Go to my link location" id="frml_submit">Submit</button>
+      <button name="submit" type="submit" value="Go to my link location" id="frm1_submit"> Submit</button>
     </fieldset>
   </form>
 </div>
+
+    <?php
+
+      $delimiter = '|';
+
+        $file = fopen("data.txt", "a+");
+
+        if (!$file) {
+          die("There was a problem opening the votes.txt file");
+        } 
+
+        $nominator_name = filter_input(INPUT_POST, 'nominator_name', FILTER_SANITIZE_URL);
+        $nominator_tel = filter_input(INPUT_POST, 'nominator_tel', FILTER_SANITIZE_URL);
+        $nominator_email = filter_input(INPUT_POST, 'nominator_email', FILTER_SANITIZE_URL);
+
+        $first_name = filter_input(INPUT_POST, 'first_name', FILTER_SANITIZE_URL);
+        $last_name = filter_input(INPUT_POST, 'last_name', FILTER_SANITIZE_URL);
+        $email = filter_input( INPUT_POST, 'email', FILTER_SANITIZE_STRING );
+        $tel = $_POST['tel'];
+
+        $file1 = $_POST['file1'];
+        $file2 = $_POST['file2'];
+        $file3 = $_POST['file3'];
+
+        $academic = $_POST['Academics'];
+        $athletics = $_POST['Athletics'];
+        $arts = $_POST['Arts'];
+        $stem = $_POST['STEM'];
+        $commserv = $_POST['CommServ'];
+
+        echo "$academic";
+
+        fputs($file, "$nominator_name $delimiter $nominator_tel $delimiter $nominator_email $delimiter $first_name $delimiter $last_name $delimiter $email $delimiter $tel $delimiter $academic $delimiter $athletics $delimiter $arts $delimiter $stem $delimiter $commserv $delimiter $file1 $delimiter $file2 $delimiter $file3 $delimiter \n");
+
+        fclose($file);
+
+        
+      
+    ?>
 
 <br> 
 
