@@ -49,6 +49,7 @@
 
 										$delimiter = '|';
       									$students = file("data.txt");
+      									
 
       									 print "
 									        <tr>
@@ -62,6 +63,7 @@
 											</tr>
 											";
 
+										
       									foreach ($students as $student) {
 									        $info = explode($delimiter, $student);
 									      
