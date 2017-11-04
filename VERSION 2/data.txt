@@ -3,3 +3,9 @@ JuliaKang | jk2534@cornell.edu | 6107577410 |
 Julia | 10
 Jen | 12
 Ben | 44
+Hi | CFG
+Pizza | 1213
+Jane | 1213 
+Student | 238749
+ |  |  |
+water | jk2534@cornell.edu | 6107577410 |
