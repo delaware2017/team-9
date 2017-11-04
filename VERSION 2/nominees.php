@@ -23,9 +23,15 @@
 					<div id="main">
 						<div class="inner">
 
+						<header id="header">
+									<a href="index.html" class="logo"><strong>Grading Portal</strong> created by Code For Good Team 9</a>
+							
+								</header>
+
 							<!-- Content -->
 								<section>
 									<header class="main">
+										
 										<h1>Student Nominees</h1>
 									</header>
 									<h4>Here, you can see the nominees.</h4>
@@ -91,14 +97,14 @@
 									</form>
 								</section>
 
-							<!-- Menu -->
+						<!-- Menu -->
 								<nav id="menu">
 									<header class="major">
 										<h2>Menu</h2>
 									</header>
 									<ul>
-										<li><a href="index.html">Homepage</a></li>
-										<li><a href="scores.php">Scores</a></li>
+										<li><a href="rubric.html">Homepage</a></li>
+										<li><a href="nominees.php">Student Nominees</a></li>
 										<li>
 											<span class="opener">Categories</span>
 											<ul>
@@ -109,9 +115,9 @@
 												<li><a href="#">Athletics</a></li>
 											</ul>
 										</li>
-										<li><a href="elements.html">Analytics</a></li>
-										<li><a href="nominees.php">Student Nominees</a></li>
+										<li><a href="analytics.html">Analytics</a></li>
 										
+								
 								</nav>
 
 					
