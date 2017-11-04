@@ -6,11 +6,11 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
-<<<<<<< HEAD
+
 import { WelcomePage } from '../pages/welcome/welcome';
-=======
+
 import { NominatePage } from '../pages/nominate/nominate';
->>>>>>> 74aac65ddbdc103eb1a34dec0aa0e5ad7bcfcda5
+
 
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
@@ -27,12 +27,12 @@ export const firebaseConfig = {
 @NgModule({
   declarations: [
     MyApp,
-<<<<<<< HEAD
+
     WelcomePage, HomePage
-=======
+
     HomePage,
     NominatePage
->>>>>>> 74aac65ddbdc103eb1a34dec0aa0e5ad7bcfcda5
+
   ],
   imports: [
     BrowserModule,
@@ -42,12 +42,12 @@ export const firebaseConfig = {
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-<<<<<<< HEAD
+
     HomePage, WelcomePage
-=======
+
     HomePage,
     NominatePage
->>>>>>> 74aac65ddbdc103eb1a34dec0aa0e5ad7bcfcda5
+
   ],
   providers: [
     StatusBar,
