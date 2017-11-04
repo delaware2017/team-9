@@ -27,24 +27,70 @@
 									<a href="index.html" class="logo"><strong>Grading Portal</strong> created by Code For Good Team 9</a>
 							
 								</header>
-
-							<!-- Content -->
 								<section>
 									<header class="main">
 										<h1>Academics</h1>
 									</header>
-									<h4>Here are academics nominees and their scores. The academic rubric is further below.</h4>
-									<p></p>
-									<h5>Nominees:</h5>
-									<ul>
-										
-										
-										
-										<li>Walt</li>
-										<li>Angel</li>
-										<li>Miriam</li>
-									</ul>
 
+										<h4>Here are academics nominees and their scores. The academic rubric is further below.</h4>
+									<p></p>
+
+
+							<table> 
+									<?php 
+
+									$delimiter = '|';
+  									$students = file("data.txt");
+  									$file = fopen("academics.txt", "a+");
+
+  									file_put_contents("academics.txt", "");
+
+  									foreach ($students as $student) {
+								        $info = explode($delimiter, $student);
+
+								       
+								        if ($info[7] == ' Academics ') {
+								        	fputs($file, $student);
+								        }
+								        
+								      }
+
+								     fclose($file);
+								     fclose($students);
+
+								  
+								     $academ = file("academics.txt");
+
+      									print "
+									        <tr>
+											<th> <h4> Last Name, First Name </h4> </th>
+											<th> <h4> Category: </h4> </th>
+											<th> <h4> Transcript: </h4> </th>
+											<th> <h4> Total Score: </h4> </th>
+											
+										
+											</tr>
+											";
+
+      									foreach ($academ as $student) {
+									        $info = explode($delimiter, $student);
+									      
+								            
+									        print "
+									        <tr>
+											<th> $info[4], $info[3]  </th>
+											<th> $info[7] </th>
+											<th style=\"color:blue;\"> $info[13] </th>
+											<th> $info[15] </th> 
+											</tr>
+											";
+									        
+									    }
+
+  									
+								?>
+							
+							</table>
 									<h4>Here is the academic rubric:</h4>
 									<table>
 										<tr>
@@ -130,6 +176,9 @@
 										</tr>
 									</table>
 								</section>
+
+							<!-- Content -->
+
 						</div>
 					</div>
 
@@ -166,104 +215,6 @@
 										<li><a href="analytics.html">Analytics</a></li>
 										
 								</nav>
-
-
-							<!-- Section -->
-								<section>
-									<header class="major">
-										<h2>Ante interdum</h2>
-									</header>
-									<div class="mini-posts">
-										<article>
-											<a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic08.jpg" alt="" /></a>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic09.jpg" alt="" /></a>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
-										</article>
-									</div>
-									<ul class="actions">
-										<li><a href="#" class="button">More</a></li>
-									</ul>
-								</section>
-
-							<!-- Section -->
-								<section>
-									<header class="major">
-										<h2>Get in touch</h2>
-									</header>
-									<p>Sed varius enim lorem ullamcorper dolore aliquam aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin sed aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-									<ul class="contact">
-										<li class="fa-envelope-o"><a href="#">information@untitled.tld</a></li>
-										<li class="fa-phone">(000) 000-0000</li>
-										<li class="fa-home">1234 Somewhere Road #8254<br />
-										Nashville, TN 00000-0000</li>
-									</ul>
-								</section>
-
-
-								<?php 
-
-
-
-									$delimiter = '|';
-  									$students = file("data.txt");
-  									$aca = fopen("academics.txt", "a+");
-
-  									file_put_contents("academics.txt", "");
-
-  									foreach ($students as $student) {
-								        $info = explode($delimiter, $student);
-
-								        if (!empty($info[7])) {
-								        	var_dump($student);
-								        	fputs($file, $student);
-								        	fputs($file, "\n");
-								        }
-								     
-								        
-								      }
-
-								     fclose($file);
-								     fclose($students);
-
-								  
-								     $aca = file("academics.txt");
-
-      									 print "
-									        <tr>
-											<th> Last Name, First Name  </th>
-											<th> Applying For: </th>
-											<th> </th>
-											<th> </th>
-											<th> </th>
-											
-										
-											</tr>
-											";
-
-      									foreach ($students as $student) {
-									        $info = explode($delimiter, $student);
-									      
-								            
-									        print "
-									        <tr>
-											<th> $info[4], $info[3]  </th>
-											<th> $info[7] </th>
-											<th> $info[8] </th>
-											<th> $info[9] </th>
-											<th> $info[11] </th>
-											</tr>
-											";
-									        
-									      }
-  									
-								?>
 
 
 							<!-- Footer -->
