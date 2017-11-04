@@ -1,51 +1,34 @@
-# world-clock
+# CRUD Template using Ionic/Firebase
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+Based off this tutorial: 
+https://www.joshmorony.com/building-a-crud-ionic-2-application-with-firebase-angularfire/
 
-## Prerequisites
+## How to use this template
 
-You will need the following things properly installed on your computer.
+*This template does not work on its own*. The shared files for each starter are found in the [ionic2-app-base repo](https://github.com/ionic-team/ionic2-app-base).
 
-* [Git](https://git-scm.com/)
-* [Node.js](https://nodejs.org/) (with NPM)
-* [Ember CLI](https://ember-cli.com/)
-* [Google Chrome](https://google.com/chrome/)
+To use this template, either create a new ionic project using the ionic node.js utility, or copy the files from this repository into the [Starter App Base](https://github.com/ionic-team/ionic2-app-base).
 
-## Installation
+### With the Ionic CLI:
 
-* `git clone <repository-url>` this repository
-* `cd world-clock`
-* `npm install`
+Take the name after `ionic2-starter-`, and that is the name of the template to be used when using the `ionic start` command below:
 
-## Running / Development
+```bash
+$ sudo npm install -g ionic cordova
+$ ionic start myBlank blank
+```
 
-* `ember serve`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
-* Visit your tests at [http://localhost:4200/tests](http://localhost:4200/tests).
+Then, to run it, cd into `myBlank` and run:
 
-### Code Generators
+```bash
+$ ionic cordova platform add ios
+$ ionic cordova run ios
+```
 
-Make use of the many generators for code, try `ember help generate` for more details
+Substitute ios for android if not on a Mac.
 
-### Running Tests
+To add AngularFire2 and Firebase run this:
 
-* `ember test`
-* `ember test --server`
-
-### Building
-
-* `ember build` (development)
-* `ember build --environment production` (production)
-
-### Deploying
-
-Specify what it takes to deploy your app.
-
-## Further Reading / Useful Links
-
-* [ember.js](https://emberjs.com/)
-* [ember-cli](https://ember-cli.com/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
+```bash
+$ npm install angularfire2 firebase --save
+```

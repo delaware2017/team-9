@@ -1,0 +1,8 @@
+{
+  "name": "angularfire_blank_template",
+  "app_id": "8f927a07",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}

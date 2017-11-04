@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+    <ion-buttons end>
+        <button ion-button icon-only (click)="addEntry()">
+            <ion-icon name="add"></ion-icon>
+        </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-list>
+        <ion-item *ngFor="let entry of entries | async" (click)="showOptions(entry.$key, entry.title)">
+            {{entry.title}}
+        </ion-item>
+    </ion-list>
+</ion-content>
