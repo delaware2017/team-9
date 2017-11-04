@@ -23,9 +23,15 @@
 					<div id="main">
 						<div class="inner">
 
+						<header id="header">
+									<a href="index.html" class="logo"><strong>Grading Portal</strong> created by Code For Good Team 9</a>
+							
+								</header>
+
 							<!-- Content -->
 								<section>
 									<header class="main">
+										
 										<h1>Student Nominees</h1>
 									</header>
 									<h4>Here, you can see the nominees.</h4>

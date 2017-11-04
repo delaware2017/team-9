@@ -18,6 +18,11 @@
 					<div id="main">
 						<div class="inner">
 
+						<header id="header">
+									<a href="index.html" class="logo"><strong>Grading Portal</strong> created by Code For Good Team 9</a>
+							
+								</header>
+
 							<!-- Header -->
 								<header id="header">
 									<a href="index.html" class="logo"><strong>Student Scores</strong> </a>
