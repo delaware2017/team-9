@@ -330,26 +330,26 @@ fieldset {
     <h3>General Information</h3>
     <h4><b>Please provide us with the following information regarding yourself, the <b><i> NOMINATOR.</i></b></h4>
     <fieldset>
-      <input placeholder="Nominator's name (ex. John Doe)" type="text" tabindex="1" required autofocus>
+      <input placeholder="Nominator's name (ex. John Doe)" name="nominator_name" type="text" tabindex="1" required autofocus>
     </fieldset>
     <fieldset>
-      <input placeholder="Nominator's Email Address" type="email" tabindex="2" required>
+      <input placeholder="Nominator's Email Address" name="nominator_email" type="email" tabindex="2" required>
     </fieldset>
     <fieldset>
-      <input placeholder="Nominator's Phone Number" type="tel" tabindex="3" required>
+      <input placeholder="Nominator's Phone Number" name="nominator_tel" type="tel" tabindex="3" required>
     </fieldset>
     <h4><b>Please provide us with the following pieces of information regarding the <b><i> NOMINEE.</i></b></h4>    
     <fieldset>
-      <input placeholder="Nominee's First Name" type="text" tabindex="4" required autofocus>
+      <input placeholder="Nominee's First Name" name="first_name" type="text" tabindex="4" required autofocus>
     </fieldset>  
     <fieldset>
-      <input placeholder="Nominee's Last Name" type="text" tabindex="5" required autofocus>
+      <input placeholder="Nominee's Last Name" name="last_name" type="text" tabindex="5" required autofocus>
     </fieldset>
     <fieldset>
-      <input placeholder="Nominee's Email Address" type="email" tabindex="6" required>
+      <input placeholder="Nominee's Email Address" name="email" type="email" tabindex="6" required>
     </fieldset>
     <fieldset>
-      <input placeholder="Nominee's Phone Number" type="tel" tabindex="7" required>
+      <input placeholder="Nominee's Phone Number" name="tel" type="tel" tabindex="7" required>
     </fieldset>
 
     <h4><b>Please select which categories you have been Nominated for (Must Select At least 1):</b></h4> 
@@ -422,6 +422,33 @@ fieldset {
     </fieldset>
   </form>
 </div>
+
+    <?php
+
+      $delimiter = '|';
+
+        $file = fopen("data.txt", "a+");
+
+        if (!$file) {
+          die("There was a problem opening the votes.txt file");
+        } 
+
+        $nominator_name = filter_input(INPUT_POST, 'nominator_name', FILTER_SANITIZE_URL);
+        $nominator_tel = filter_input(INPUT_POST, 'nominator_tel', FILTER_SANITIZE_URL);
+        $nominator_email = filter_input(INPUT_POST, 'nominator_email', FILTER_SANITIZE_URL);
+
+        $first_name = filter_input(INPUT_POST, 'first_name', FILTER_SANITIZE_URL);
+        $last_name = filter_input(INPUT_POST, 'last_name', FILTER_SANITIZE_URL);
+        $email = filter_input( INPUT_POST, 'email', FILTER_SANITIZE_STRING );
+        $tel = filter_input( INPUT_POST, 'tel', FILTER_SANITIZE_STRING );
+
+
+        fputs($file, "$nominator_name $delimiter $nominator_tel $delimiter $nominator_email $delimiter $first_name $delimiter $last_name $delimiter $email $delimiter $tel $delimiter\n");
+        fclose($file);
+
+        
+      
+    ?>
 
 <br> 
 
