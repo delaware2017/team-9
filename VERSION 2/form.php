@@ -326,7 +326,7 @@ fieldset {
 <content padding>
 
 <div class="container">  
-  <form id="contact" action="" method="post">
+  <form id="contact" action="Nominee_thanks.html" method="get">
     <h3>General Information</h3>
     <h4><b>Please provide us with the following information regarding yourself, the <b><i> NOMINATOR.</i></b></h4>
     <fieldset>
@@ -418,7 +418,7 @@ fieldset {
 
     <br>
     <fieldset>
-      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+      <button name="submit" type="submit" value="Go to my link location" id="frm1_submit"> Submit</button>
     </fieldset>
   </form>
 </div>
