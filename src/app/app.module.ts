@@ -6,34 +6,48 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
+<<<<<<< HEAD
 import { WelcomePage } from '../pages/welcome/welcome';
+=======
+import { NominatePage } from '../pages/nominate/nominate';
+>>>>>>> 74aac65ddbdc103eb1a34dec0aa0e5ad7bcfcda5
 
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 
 export const firebaseConfig = {
-    apiKey: "AIzaSyDr-BjUx5Zy8jGTKOntM_f2xmy73AHWFjA",
-    authDomain: "bookkeeping-app-8f30c.firebaseapp.com",
-    databaseURL: "https://bookkeeping-app-8f30c.firebaseio.com",
-    storageBucket: "bookkeeping-app-8f90c.appspot.com",
-    messagingSenderId: "207671503203",
+    apiKey: "AIzaSyDrDTEAsAdaiKuieKaAFnASJ2leirE_SH8",
+    authDomain: "code-for-good-9.firebaseapp.com",
+    databaseURL: "https://code-for-good-9.firebaseio.com",
+    projectId: "code-for-good-9",
+    storageBucket: "code-for-good-9.appspot.com",
+    messagingSenderId: "479024488237"
 };
 
 @NgModule({
   declarations: [
     MyApp,
+<<<<<<< HEAD
     WelcomePage, HomePage
+=======
+    HomePage,
+    NominatePage
+>>>>>>> 74aac65ddbdc103eb1a34dec0aa0e5ad7bcfcda5
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp),
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFireDatabaseModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
+<<<<<<< HEAD
     HomePage, WelcomePage
+=======
+    HomePage,
+    NominatePage
+>>>>>>> 74aac65ddbdc103eb1a34dec0aa0e5ad7bcfcda5
   ],
   providers: [
     StatusBar,
