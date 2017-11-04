@@ -100,7 +100,6 @@
 										
 								</nav>
 
-
 							<!-- Section -->
 								<section>
 									<header class="major">
