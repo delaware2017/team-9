@@ -1,8 +1,6 @@
 JuliaKang | 6107577410 | jk2534@cornell.edu | Julia | Kang | jk2534@cornell.edu | 6107577410 | Academics |  |  | STEM |  | Kang,Julia.pdf | Kang,Julia.pdf  | loop_invariants.pdf | 100 | | |
-Nominator Name | Nominator Tel | Nominator email | Shlok | Kaneria | email| Tel |  |  | Arts |  |  | resume | transcript.pdf | supporting material | 100 | Score | Score |
-Nominator Name | Nominator Tel | Nominator email | Mohsin | Rizvi | email| Tel |  | Athletics |  | STEM | CommServ | resume.pdf | transcript | supporting material | 100 | Score | Score |
-Nominator Name | Nominator Tel | Nominator email | Ashlet | Williams | email| Tel | Academics |  | Arts |  |  | resume | transcript.pdf | supporting material | 100 | Score | Score |
-Nominator Name | Nominator Tel | Nominator email | Kiara | MacElree | email| Tel |  | Athletics |  |  | CommServ | resume | transcript.doc | supporting material | 100 | Score | Score |
-Nominator Name | Nominator Tel | Nominator email | Aamir | Majerd | email| Tel | Academics |  | Arts | STEM |  | resume | transcript.pdf | supporting material | 100 | Score | Score |
- |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
-JP Morgan | 4567890 | email@email.com | Julia | Kang | jk2534@cornell.edu | 6107577410 | Academics |  | Arts |  |  | Kang,Julia.pdf | Kang,Julia.pdf | Kang,Julia.pdf | 
+Nominator Name | Nominator Tel | Nominator email | Shlok | Kaneria | email| Tel | Academics |  | Arts |  |  | resume | Kaneria, Shlok.pdf | supporting material | 100 | Score | Score |
+Nominator Name | Nominator Tel | Nominator email | Mohsin | Rizvi | email| Tel |  | Athletics |  | STEM | CommServ | Rizvi, Moshin.pdf | transcript | supporting material | 100 | Score | Score |
+Nominator Name | Nominator Tel | Nominator email | Ashlet | Williams | email| Tel | Academics |  | Arts |  |  | resume | Williams, Ashlet.pdf | supporting material | 100 | Score | Score |
+Nominator Name | Nominator Tel | Nominator email | Khiara | MacElree | email| Tel |  | Athletics |  |  | CommServ | resume | MacElree, Khiara.doc | supporting material | 100 | Score | Score |
+Nominator Name | Nominator Tel | Nominator email | Aamir | Majerd | email| Tel | Academics |  | Arts | STEM |  | resume | Majerd,Aamir.pdf | supporting material | 100 | Score | Score |
