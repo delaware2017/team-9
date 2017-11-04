@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <!--
 	Editorial by HTML5 UP
 	html5up.net | @ajlkn
@@ -41,7 +41,57 @@
 										<h1>Student Nominees</h1>
 									</header>
 
-									
+						<?php 
+      
+						      $delimiter = '|';
+						      $albums = file("data.txt");
+
+						      $title = filter_input( INPUT_POST, 'title', FILTER_SANITIZE_STRING );
+						      $artist = filter_input( INPUT_POST, 'artist', FILTER_SANITIZE_STRING ); 
+						      $genre = filter_input(INPUT_POST, 'genre', FILTER_SANITIZE_STRING);
+						      $date = filter_input( INPUT_POST, 'date', FILTER_SANITIZE_NUMBER_INT );
+						      
+						      if(isset($_POST["submit"]) && $title=="" && $artist=="" && $genre=="" && $date==""){
+						        print "<h3> ~Please Enter Search Values~ </h3> <br>";
+						        print "<h4> Our Current Collection: </h4>";
+						        // print "<p> <a href=\"index.php\"> Return Home </a> </p> <br>";
+						      }
+						      else if(isset($_POST["submit"])){
+						        print "<h4> Search Results: </h4>";
+						      }
+						      else{
+						        print "<h4> Our Current Collection: </h4>";
+						      }
+
+
+						      foreach ($albums as $album) {
+						        $display = 1; //1 means TRUE and 0 means
+						        $info = explode($delimiter, $album);
+						          
+						        if (isset($_POST["title"]) || isset($_POST["artist"])|| isset($_POST["date"])|| isset($_POST["genre"])) {
+						            if ($title != "" && (strtolower($title) != strtolower(trim($info[1])) ) )  {
+						                  $display = 0;
+						              } 
+						              elseif ($artist != "" && strtolower($artist) != strtolower(trim($info[2]))) {
+						                  $display = 0;
+						                }
+						              elseif ($date != "" && strtolower($date) != strtolower(trim($info[3]))) {
+						                  $display = 0;
+						                }
+						              elseif ($genre != "" && strtolower($genre) != strtolower(trim($info[4]))) {
+						                  $display = 0;
+						            }
+						        }
+
+						        if ($display) {
+						            print "
+						              <div class=\"hoverpic\">
+						                <img src= '$info[0]' alt=\"albumcover\"/>
+						                <p class=\"hover-text\"> \"$info[1]\" ($info[3]) Artist: $info[2] - $info[4]</p>
+						              </div> ";
+						        }
+						      }
+    ?>
 
 								</section>
 
