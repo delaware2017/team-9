@@ -40,6 +40,41 @@
 										<li>Miriam</li>
 									</ul>
 
+									<h5>Ordered scored nominees</h5>
+									<table>
+										<tr>
+											<th>Nominee</th>
+											<th>Score</th>
+										</tr>
+										<tr>
+
+									<?php 
+
+										$delimiter = '|';
+      									$students = file("data.txt");
+
+      									foreach ($students as $student) {
+									        $info = explode($delimiter, $student);
+									        
+									        $first_name = $info[0];
+								            $last_name = $info[1];
+								            
+									        print "
+									        <tr>
+											<th> $info[0] </th>
+											<th> $info[1] </th>
+											</tr>
+											";
+									        
+									      }
+      									
+									 ?>
+
+											<th>Miriam</th>
+											<th>18</th>
+										</tr>
+									</table>
+
 								</section>
 
 						</div>
@@ -75,7 +110,7 @@
 											</ul>
 										</li>
 										<li><a href="elements.html">Analytics</a></li>
-										<li><a href="nominees.html">Student Nominees</a></li>
+										<li><a href="nominees.php">Student Nominees</a></li>
 										
 								</nav>
 
