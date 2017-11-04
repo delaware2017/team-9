@@ -90,12 +90,13 @@
 									<ul>
 										<li><a href="rubric.html">Homepage</a></li>
 										<li><a href="nominees.php">Student Nominees</a></li>
+										<li><a href="admin.html">Admin Home</a></li>
 										<li>
 											<span class="opener">Categories</span>
 											<ul>
 												<li><a href="admin.html">Academics</a></li>
-												<li><a href="#">STEM</a></li>
-												<li><a href="#">Art</a></li>
+												<li><a href="stem.html">STEM</a></li>
+												<li><a href="art.html">Art</a></li>
 												<li><a href="#">Community Service</a></li>
 												<li><a href="#">Athletics</a></li>
 											</ul>
