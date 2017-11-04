@@ -457,8 +457,6 @@ fieldset {
         fputs($file, "$nominator_name $delimiter $nominator_tel $delimiter $nominator_email $delimiter $first_name $delimiter $last_name $delimiter $email $delimiter $tel $delimiter $academic $delimiter $athletics $delimiter $arts $delimiter $stem $delimiter $commserv $delimiter $file1 $delimiter $file2 $delimiter $file3 $delimiter \n");
 
         fclose($file);
-
-        
       
     ?>
 
