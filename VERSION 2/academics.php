@@ -93,14 +93,14 @@
 							</table>
 									<h4>Here is the academic rubric:</h4>
 									<table>
-										<tr>
-											<th></th>
-											<th>Academic Criteria</th>
-											<th>0 - Does not meet expectations</th>
-											<th>1 - Minimully meets expectations</th>
-											<th>2 - Meets expectations</th>
-											<th>3 - Exceeds expectations</th>
-											<th>Score</th>
+										<tr><h4>
+											<th><h4>Category</th>
+											<th><h4>Academic Criteria </th>
+											<th><h4>0 - Does not meet expectations</th>
+											<th><h4>1 - Minimully meets expectations</th>
+											<th><h4>2 - Meets expectations</th>
+											<th><h4>3 - Exceeds expectations</th>
+											<th><h4>Score</th>
 										</tr>
 										<tr>
 											<th>1a</th>
