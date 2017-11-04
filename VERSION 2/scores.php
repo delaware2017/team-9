@@ -1,9 +1,4 @@
 <!DOCTYPE html>
-<!--
-	Editorial by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 	<head>
 		<title>Generic - Editorial by HTML5 UP</title>
@@ -40,58 +35,32 @@
 									<header class="main">
 										<h1>Student Nominees</h1>
 									</header>
-
-						<?php 
+									
+									<?php 
       
-						      $delimiter = '|';
-						      $albums = file("data.txt");
+								      $delimiter = '|';
+								      $students = file("data.txt");
 
-						      $title = filter_input( INPUT_POST, 'title', FILTER_SANITIZE_STRING );
-						      $artist = filter_input( INPUT_POST, 'artist', FILTER_SANITIZE_STRING ); 
-						      $genre = filter_input(INPUT_POST, 'genre', FILTER_SANITIZE_STRING);
-						      $date = filter_input( INPUT_POST, 'date', FILTER_SANITIZE_NUMBER_INT );
-						      
-						      if(isset($_POST["submit"]) && $title=="" && $artist=="" && $genre=="" && $date==""){
-						        print "<h3> ~Please Enter Search Values~ </h3> <br>";
-						        print "<h4> Our Current Collection: </h4>";
-						        // print "<p> <a href=\"index.php\"> Return Home </a> </p> <br>";
-						      }
-						      else if(isset($_POST["submit"])){
-						        print "<h4> Search Results: </h4>";
-						      }
-						      else{
-						        print "<h4> Our Current Collection: </h4>";
-						      }
+								      $title = filter_input( INPUT_POST, 'title', FILTER_SANITIZE_STRING );
+								      $artist = filter_input( INPUT_POST, 'artist', FILTER_SANITIZE_STRING ); 
+								      $genre = filter_input(INPUT_POST, 'genre', FILTER_SANITIZE_STRING);
+								      $date = filter_input( INPUT_POST, 'date', FILTER_SANITIZE_NUMBER_INT );
+								      
+								      foreach ($students as $student) {
+									        $display = 1; //1 means TRUE and 0 means
+									        $info = explode($delimiter, $student);
+									          
+									       
+								            $first_name = $info[0];
+								            $last_name = $info[1];
+								        }
 
+								        echo $first_name;
+								        echo $last_name;
+								        
+							
 
-						      foreach ($albums as $album) {
-						        $display = 1; //1 means TRUE and 0 means
-						        $info = explode($delimiter, $album);
-						          
-						        if (isset($_POST["title"]) || isset($_POST["artist"])|| isset($_POST["date"])|| isset($_POST["genre"])) {
-						            if ($title != "" && (strtolower($title) != strtolower(trim($info[1])) ) )  {
-						                  $display = 0;
-						              } 
-						              elseif ($artist != "" && strtolower($artist) != strtolower(trim($info[2]))) {
-						                  $display = 0;
-						                }
-						              elseif ($date != "" && strtolower($date) != strtolower(trim($info[3]))) {
-						                  $display = 0;
-						                }
-						              elseif ($genre != "" && strtolower($genre) != strtolower(trim($info[4]))) {
-						                  $display = 0;
-						            }
-						        }
-
-						        if ($display) {
-						            print "
-						              <div class=\"hoverpic\">
-						                <img src= '$info[0]' alt=\"albumcover\"/>
-						                <p class=\"hover-text\"> \"$info[1]\" ($info[3]) Artist: $info[2] - $info[4]</p>
-						              </div> ";
-						        }
-						      }
-    ?>
+								    ?>
 
 								</section>
 
@@ -108,41 +77,30 @@
 										<input type="text" name="query" id="query" placeholder="Search" />
 									</form>
 								</section>
-
-							<!-- Menu -->
+							
+						<!-- Menu -->
 								<nav id="menu">
 									<header class="major">
 										<h2>Menu</h2>
 									</header>
 									<ul>
 										<li><a href="index.html">Homepage</a></li>
-										<li><a href="generic.html">Generic</a></li>
-										<li><a href="elements.html">Elements</a></li>
+										<li><a href="scores.php">Scores</a></li>
 										<li>
-											<span class="opener">Submenu</span>
+											<span class="opener">Categories</span>
 											<ul>
-												<li><a href="#">Lorem Dolor</a></li>
-												<li><a href="#">Ipsum Adipiscing</a></li>
-												<li><a href="#">Tempus Magna</a></li>
-												<li><a href="#">Feugiat Veroeros</a></li>
+												<li><a href="#">Academics</a></li>
+												<li><a href="#">STEM</a></li>
+												<li><a href="#">Art</a></li>
+												<li><a href="#">Community Service</a></li>
+												<li><a href="#">Athletics</a></li>
 											</ul>
 										</li>
-										<li><a href="#">Etiam Dolore</a></li>
-										<li><a href="#">Adipiscing</a></li>
-										<li>
-											<span class="opener">Another Submenu</span>
-											<ul>
-												<li><a href="#">Lorem Dolor</a></li>
-												<li><a href="#">Ipsum Adipiscing</a></li>
-												<li><a href="#">Tempus Magna</a></li>
-												<li><a href="#">Feugiat Veroeros</a></li>
-											</ul>
-										</li>
-										<li><a href="#">Maximus Erat</a></li>
-										<li><a href="#">Sapien Mauris</a></li>
-										<li><a href="#">Amet Lacinia</a></li>
-									</ul>
+										<li><a href="elements.html">Analytics</a></li>
+										<li><a href="#">Student Nominees</a></li>
+										
 								</nav>
+
 
 							<!-- Section -->
 								<section>
