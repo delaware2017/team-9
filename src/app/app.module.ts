@@ -28,10 +28,7 @@ export const firebaseConfig = {
   declarations: [
     MyApp,
 
-    WelcomePage, HomePage
-
-    HomePage,
-    NominatePage
+    WelcomePage, HomePage, NominatePage
 
   ],
   imports: [
@@ -43,10 +40,7 @@ export const firebaseConfig = {
   entryComponents: [
     MyApp,
 
-    HomePage, WelcomePage
-
-    HomePage,
-    NominatePage
+    HomePage, WelcomePage, NominatePage
 
   ],
   providers: [
