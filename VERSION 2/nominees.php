@@ -109,19 +109,17 @@
 										<li>
 											<span class="opener">Categories</span>
 											<ul>
-												<li><a href="academics.html">Academics</a></li>
+												<li><a href="academics.php">Academics</a></li>
 												<li><a href="stem.html">STEM</a></li>
-												<li><a href="art.html">Art</a></li>
+												<li><a href="arts.html">Art</a></li>
 												<li><a href="community.html">Community Service</a></li>
 												<li><a href="athletics.html">Athletics</a></li>
 											</ul>
 										</li>
 										<li><a href="analytics.html">Analytics</a></li>
 										
-								
 								</nav>
-
-					
+								
 							<!-- Footer -->
 								<footer id="footer">
 									<p class="copyright">&copy; Untitled. All rights reserved. Demo Images: <a href="https://unsplash.com">Unsplash</a>. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
