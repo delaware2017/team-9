@@ -97,8 +97,8 @@
 										<h2>Menu</h2>
 									</header>
 									<ul>
-										<li><a href="index.html">Homepage</a></li>
-										<li><a href="scores.php">Scores</a></li>
+										<li><a href="rubric.html">Homepage</a></li>
+										<li><a href="nominees.php">Student Nominees</a></li>
 										<li>
 											<span class="opener">Categories</span>
 											<ul>
@@ -110,8 +110,8 @@
 											</ul>
 										</li>
 										<li><a href="analytics.html">Analytics</a></li>
-										<li><a href="nominees.php">Student Nominees</a></li>
 										
+								
 								</nav>
 
 					
