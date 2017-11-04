@@ -23,7 +23,7 @@
 					<div id="main">
 						<div class="inner">
 
-						<header id="header">
+								<header id="header">
 									<a href="index.html" class="logo"><strong>Grading Portal</strong> created by Code For Good Team 9</a>
 							
 								</header>
@@ -31,63 +31,25 @@
 							<!-- Content -->
 								<section>
 									<header class="main">
-										<h1>Arts</h1>
+										<h1>Academics</h1>
 									</header>
-									<h4>Here are the arts nominees and their scores. The arts rubric is further below.</h4>
+									<h4>Here are academics nominees and their scores. The academic rubric is further below.</h4>
 									<p></p>
 									<h5>Nominees:</h5>
-									<table>
-										<tr>
-											<th>Student</th>
-											<th>1</th>
-											<th>2</th>
-											<th>3</th>
-											<th>4</th>
-											<th>5</th>
-											<th>6</th>
-											<th>7</th>
-											<th>Total</th>
-										</tr>
-										<tr>
-											<th>J.P.</th>
-											<th>3</th>
-											<th>2</th>
-											<th>3</th>
-											<th>2</th>
-											<th>2</th>
-											<th>3</th>
-											<th>3</th>
-											<th>20</th>
-										</tr>
-										<tr>
-											<th>Fernando</th>
-											<th><input style = "width: 100%"></th>
-											<th><input style = "width: 100%"></th>
-											<th><input style = "width: 100%"></th>
-											<th><input style = "width: 100%"></th>
-											<th><input style = "width: 100%"></th>
-											<th><input style = "width: 100%"></th>
-											<th><input style = "width: 100%"></th>
-											<th><input style = "width: 100%"></th>
-										</tr>
-										<tr>
-											<th>Melody</th>
-											<th><input style = "width: 100%"></th>
-											<th><input style = "width: 100%"></th>
-											<th><input style = "width: 100%"></th>
-											<th><input style = "width: 100%"></th>
-											<th><input style = "width: 100%"></th>
-											<th><input style = "width: 100%"></th>
-											<th><input style = "width: 100%"></th>
-											<th><input style = "width: 100%"></th>
-										</tr>
-									</table>
+									<ul>
+										
+										
+										
+										<li>Walt</li>
+										<li>Angel</li>
+										<li>Miriam</li>
+									</ul>
 
-									<h4>Here is the arts rubric:</h4>
+									<h4>Here is the academic rubric:</h4>
 									<table>
 										<tr>
 											<th></th>
-											<th>Arts Criteria</th>
+											<th>Academic Criteria</th>
 											<th>0 - Does not meet expectations</th>
 											<th>1 - Minimully meets expectations</th>
 											<th>2 - Meets expectations</th>
@@ -95,62 +57,71 @@
 											<th>Score</th>
 										</tr>
 										<tr>
-											<th>1</th>
-											<th>Creativity / Originality</th>
-											<th>Subject that is portrayed is a common theme or lacks original thought; cliche.</th>
-											<th>Personal ideas and thoughts shown in the art work.</th>
-											<th>Out of the ordinary; imaginative.</th>
-											<th>Extraordinary expression; outside the box thinking, mind-blowing and provocative.</th>
+											<th>1a</th>
+											<th>Evaluation based on unweighted cumulative GPA.</th>
+											<th>Below minimum 3.5 unweighted GPA.</th>
+											<th>Has minimum 3.5 unweighted GPA.</th>
+											<th>Has unweighted GPA of 3.75-3.90.</th>
+											<th>Has unweighted GPA above 3.91.</th>
 											<th></th>
 										</tr>
 										<tr>
-											<th>2</th>
-											<th>Craftsmanship / Skill</th>
-											<th>Technique and use of tools and materials is satisfactory.</th>
-											<th>Standard skill / Control of the elements.</th>
-											<th>Strong technique and use of tools; Skill is well- developed.</th>
-											<th>Excellent technique and mastery of skills is clearly demonstrated.</th>
+											<th>1B</th>
+											<th>If no unweighted GPA, evaluate by weighted GPA.</th>
+											<th>Has minimum 3.5 weighted GPA.</th>
+											<th>Has weighted GPA of 3.75-3.90.</th>
+											<th>Has weighted GPA of 3.91-4.0.</th>
+											<th>Has weighted GPA above 4.0.</th>
+											<th></th>
+										</tr>
+										<tr>
+											<th>2A</th>
+											<th>Evaluate student based on unweighted class rank.</th>
+											<th>Ranks in top 15% of class.</th>
+											<th>Ranks in top 10% of class.</th>
+											<th>Ranks in top 5% of class.</th>
+											<th>Ranks in top 3% of class.</th>
+											<th></th>
+										</tr>
+										<tr>
+											<th>2B</th>
+											<th>If no unweighted class rank, evaluate by weighted class rank.</th>
+											<th>Ranks in top 10% of class.</th>
+											<th>Ranks in top 5% of class.</th>
+											<th>Ranks in top 3% of class.</th>
+											<th>Ranks in top 1% of class.</th>
 											<th></th>
 										</tr>
 										<tr>
 											<th>3</th>
-											<th>Impression &amp; Effect</th>
-											<th>Impression made by art is not profound; does not tell a larger story.</th>
-											<th>Some meaning is apparent but could use further development.</th>
-											<th>Meaning or intent is well-conveyed; art tells a story that makes you think.</th>
-											<th>Profound, deep meaning behind the art; heart-wrenching, life-changing, groundbreaking.</th>
+											<th>Number of AP classes taken.</th>
+											<th>Does not currently take AP classes.</th>
+											<th>Takes 1 AP class.</th>
+											<th>Takes 2 AP classes.</th>
+											<th>Takes 3 or more AP classes.</th>
 											<th></th>
 										</tr>
 										<tr>
 											<th>4</th>
-											<th>Composition and Design</th>
-											<th>Composition or design is not well-developed / doesn't show much though.</th>
-											<th>Basic elements of composition / design are evident.</th>
-											<th>Composition / design is well established.</th>
-											<th>Execution is extremely well thought-out and intentional; meticulous attention to detail.</th>
+											<th>Number of honors classes taken.</th>
+											<th>Does not currently take honors classes.</th>
+											<th>Takes 1 honors class.</th>
+											<th>Takes 2 honors classes.</th>
+											<th>Takes 3 or more honors classes.</th>
 											<th></th>
 										</tr>
 										<tr>
-											<th>5</th>
-											<th>Number of arts related courses taken in and out of school.</th>
-											<th>Has not taken art classes.</th>
-											<th>1 art-related class.</th>
-											<th>2 art-related classes.</th>
-											<th>3 or more art-related classes.</th>
+                      <th>5</th>
+                      <th>AP and honors courses overall grades</th>
+											<th>0</th>
+											<th>1</th>
+											<th>2</th>
+											<th>3</th>
 											<th></th>
-										</tr>
-										<tr>
-											<th>6</th>
-											<th>Grades in art-related courses</th>
-											<th>Has not taken art classes.</th>
-											<th>Has a B average (81-87%) in art-related courses.</th>
-											<th>Has a B+ average (88-91%) in art-related courses.</th>
-											<th>Has an A average (92%) in art-related courses.</th>
-											<th></th>
-										</tr>
-										<tr>
-											<th>7</th>
-											<th>Discretionary Points: Assign 0-3 points based on support materials such as competition entries, awards, etc.</th>
+                      <th></th>
+                    </tr>
+                    <tr>
+                      <th>Discretionary points: Assign additional points based on standardized test scores, academic awards, honor society membership, etc.</th>
 											<th>0</th>
 											<th>1</th>
 											<th>2</th>
@@ -158,9 +129,7 @@
 											<th></th>
 										</tr>
 									</table>
-
 								</section>
-
 						</div>
 					</div>
 
@@ -174,7 +143,8 @@
 										<input type="text" name="query" id="query" placeholder="Search" />
 									</form>
 								</section>
-						<!-- Menu -->
+
+<!-- Menu -->
 								<nav id="menu">
 									<header class="major">
 										<h2>Menu</h2>
@@ -186,7 +156,7 @@
 										<li>
 											<span class="opener">Categories</span>
 											<ul>
-												<li><a href="academics.html">Academics</a></li>
+												<li><a href="academics.php">Academics</a></li>
 												<li><a href="stem.html">STEM</a></li>
 												<li><a href="arts.html">Art</a></li>
 												<li><a href="community.html">Community Service</a></li>
@@ -196,6 +166,7 @@
 										<li><a href="analytics.html">Analytics</a></li>
 										
 								</nav>
+
 
 							<!-- Section -->
 								<section>
@@ -234,6 +205,66 @@
 										Nashville, TN 00000-0000</li>
 									</ul>
 								</section>
+
+
+								<?php 
+
+
+
+									$delimiter = '|';
+  									$students = file("data.txt");
+  									$aca = fopen("academics.txt", "a+");
+
+  									file_put_contents("academics.txt", "");
+
+  									foreach ($students as $student) {
+								        $info = explode($delimiter, $student);
+
+								        if (!empty($info[7])) {
+								        	var_dump($student);
+								        	fputs($file, $student);
+								        	fputs($file, "\n");
+								        }
+								     
+								        
+								      }
+
+								     fclose($file);
+								     fclose($students);
+
+								  
+								     $aca = file("academics.txt");
+
+      									 print "
+									        <tr>
+											<th> Last Name, First Name  </th>
+											<th> Applying For: </th>
+											<th> </th>
+											<th> </th>
+											<th> </th>
+											
+										
+											</tr>
+											";
+
+      									foreach ($students as $student) {
+									        $info = explode($delimiter, $student);
+									      
+								            
+									        print "
+									        <tr>
+											<th> $info[4], $info[3]  </th>
+											<th> $info[7] </th>
+											<th> $info[8] </th>
+											<th> $info[9] </th>
+											<th> $info[11] </th>
+											</tr>
+											";
+									        
+									      }
+  									
+								?>
+
 
 							<!-- Footer -->
 								<footer id="footer">

@@ -82,7 +82,7 @@
 										<input type="text" name="query" id="query" placeholder="Search" />
 									</form>
 								</section>
-						<!-- Menu -->
+<!-- Menu -->
 								<nav id="menu">
 									<header class="major">
 										<h2>Menu</h2>
@@ -90,14 +90,15 @@
 									<ul>
 										<li><a href="rubric.html">Homepage</a></li>
 										<li><a href="nominees.php">Student Nominees</a></li>
+										<li><a href="admin.html">Admin Home</a></li>
 										<li>
 											<span class="opener">Categories</span>
 											<ul>
-												<li><a href="admin.html">Academics</a></li>
-												<li><a href="#">STEM</a></li>
-												<li><a href="#">Art</a></li>
-												<li><a href="#">Community Service</a></li>
-												<li><a href="#">Athletics</a></li>
+												<li><a href="academics.php">Academics</a></li>
+												<li><a href="stem.html">STEM</a></li>
+												<li><a href="arts.html">Art</a></li>
+												<li><a href="community.html">Community Service</a></li>
+												<li><a href="athletics.html">Athletics</a></li>
 											</ul>
 										</li>
 										<li><a href="analytics.html">Analytics</a></li>

@@ -36,17 +36,8 @@
 									</header>
 									<h4>Here, you can see the nominees.</h4>
 									<p></p>
-									<h5>Nominees:</h5>
-									<ul>
-										
-										
-										
-										<li>Walt</li>
-										<li>Angel</li>
-										<li>Miriam</li>
-									</ul>
 
-									<h5>Ordered scored nominees</h5>
+									<h5>Scored Nominees:</h5>
 									<table>
 <!-- 										<tr>
 											<th>Nominee</th>
@@ -59,23 +50,35 @@
 										$delimiter = '|';
       									$students = file("data.txt");
 
+      									 print "
+									        <tr>
+											<th> Last Name, First Name  </th>
+											<th> Applying For: </th>
+											<th> </th>
+											<th> </th>
+											<th> </th>
+											
+										
+											</tr>
+											";
+
       									foreach ($students as $student) {
 									        $info = explode($delimiter, $student);
-									        
-									       
+									      
 								            
 									        print "
 									        <tr>
 											<th> $info[4], $info[3]  </th>
-											<th> $info[15] </th>
+											<th> $info[7] </th>
+											<th> $info[8] </th>
+											<th> $info[9] </th>
+											<th> $info[11] </th>
 											</tr>
 											";
 									        
 									      }
       									
 									 ?>
-
-									
 									</table>
 
 								</section>
@@ -102,22 +105,21 @@
 									<ul>
 										<li><a href="rubric.html">Homepage</a></li>
 										<li><a href="nominees.php">Student Nominees</a></li>
+										<li><a href="admin.html">Admin Home</a></li>
 										<li>
 											<span class="opener">Categories</span>
 											<ul>
-												<li><a href="admin.html">Academics</a></li>
-												<li><a href="#">STEM</a></li>
-												<li><a href="#">Art</a></li>
-												<li><a href="#">Community Service</a></li>
-												<li><a href="#">Athletics</a></li>
+												<li><a href="academics.php">Academics</a></li>
+												<li><a href="stem.html">STEM</a></li>
+												<li><a href="arts.html">Art</a></li>
+												<li><a href="community.html">Community Service</a></li>
+												<li><a href="athletics.html">Athletics</a></li>
 											</ul>
 										</li>
 										<li><a href="analytics.html">Analytics</a></li>
 										
-								
 								</nav>
-
-					
+								
 							<!-- Footer -->
 								<footer id="footer">
 									<p class="copyright">&copy; Untitled. All rights reserved. Demo Images: <a href="https://unsplash.com">Unsplash</a>. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
