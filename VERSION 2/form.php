@@ -325,8 +325,8 @@ fieldset {
 
 <content padding>
 
-<div class="container">  
-  <form id="contact" action="Nominee_thanks.html" method="get">
+<div class="container"> 
+  <form id="contact" action="" method="get">
     <h3>General Information</h3>
     <h4><b>Please provide us with the following information regarding yourself, the <b><i> NOMINATOR.</i></b></h4>
     <fieldset>
@@ -418,47 +418,47 @@ fieldset {
 
     <br>
     <fieldset>
-      <button name="submit" type="submit" value="Go to my link location" id="frm1_submit"> Submit</button>
+      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
     </fieldset>
   </form>
 </div>
 
     <?php
-
       $delimiter = '|';
 
         $file = fopen("data.txt", "a+");
-
+        
         if (!$file) {
           die("There was a problem opening the votes.txt file");
         } 
 
-        $nominator_name = filter_input(INPUT_POST, 'nominator_name', FILTER_SANITIZE_URL);
-        $nominator_tel = filter_input(INPUT_POST, 'nominator_tel', FILTER_SANITIZE_URL);
-        $nominator_email = filter_input(INPUT_POST, 'nominator_email', FILTER_SANITIZE_URL);
+        $nominator_name = $_GET['nominator_name'];
+        $nominator_tel = $_GET['nominator_tel'];
+        $nominator_email = $_GET['nominator_email'];
 
-        $first_name = filter_input(INPUT_POST, 'first_name', FILTER_SANITIZE_URL);
-        $last_name = filter_input(INPUT_POST, 'last_name', FILTER_SANITIZE_URL);
-        $email = filter_input( INPUT_POST, 'email', FILTER_SANITIZE_STRING );
-        $tel = $_POST['tel'];
+        $first_name = $_GET['first_name'];
+        $last_name = $_GET['last_name'];
+        $email = $_GET['email'];
+        $tel = $_GET['tel'];
 
-        $file1 = $_POST['file1'];
-        $file2 = $_POST['file2'];
-        $file3 = $_POST['file3'];
+        $file1 = $_GET['file1'];
+        $file2 = $_GET['file2'];
+        $file3 = $_GET['file3'];
 
-        $academic = $_POST['Academics'];
-        $athletics = $_POST['Athletics'];
-        $arts = $_POST['Arts'];
-        $stem = $_POST['STEM'];
-        $commserv = $_POST['CommServ'];
-
-        echo "$academic";
+        $academic = $_GET['Academics'];
+        $athletics = $_GET['Athletics'];
+        $arts = $_GET['Arts'];
+        $stem = $_GET['STEM'];
+        $commserv = $_GET['CommServ'];
 
         fputs($file, "$nominator_name $delimiter $nominator_tel $delimiter $nominator_email $delimiter $first_name $delimiter $last_name $delimiter $email $delimiter $tel $delimiter $academic $delimiter $athletics $delimiter $arts $delimiter $stem $delimiter $commserv $delimiter $file1 $delimiter $file2 $delimiter $file3 $delimiter \n");
 
         fclose($file);
+
       
     ?>
 
 <br> 
+
+
 

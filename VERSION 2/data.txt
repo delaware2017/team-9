@@ -4,3 +4,5 @@ Nominator Name | Nominator Tel | Nominator email | Mohsin | Rizvi | email| Tel |
 Nominator Name | Nominator Tel | Nominator email | Ashlet | Williams | email| Tel | Academics |  | Arts |  |  | resume | transcript.pdf | supporting material | 100 | Score | Score |
 Nominator Name | Nominator Tel | Nominator email | Kiara | MacElree | email| Tel |  | Athletics |  |  | CommServ | resume | transcript.doc | supporting material | 100 | Score | Score |
 Nominator Name | Nominator Tel | Nominator email | Aamir | Majerd | email| Tel | Academics |  | Arts | STEM |  | resume | transcript.pdf | supporting material | 100 | Score | Score |
+ |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+Julia Kang | 6107577410 | jk2534@cornell.edu | JP | Kang | jk2534@cornell.edu | 6107577410 | Academics |  | Arts |  |  | Kang,Julia.pdf | Kang,Julia.pdf | Kang,Julia.pdf | 

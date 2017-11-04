@@ -204,15 +204,17 @@ Award Categories
 
 			$delimiter = '|';
 
-				$file = fopen("data.txt", "a+");
+				$file = fopen("new.txt", "a+");
 
 				if (!$file) {
 				  die("There was a problem opening the votes.txt file");
 				} 
 
-				$name = filter_input(INPUT_POST, 'name', FILTER_SANITIZE_URL);
+				$name = $_POST['name'];
 				$email = filter_input( INPUT_POST, 'email', FILTER_SANITIZE_STRING );
 				$tel = filter_input( INPUT_POST, 'tel', FILTER_SANITIZE_STRING );
+
+
 
 
 				fputs($file, "$name $delimiter $email $delimiter $tel $delimiter\n");
