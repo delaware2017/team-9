@@ -206,6 +206,30 @@
 									</ul>
 								</section>
 
+
+								<?php 
+
+									$delimiter = '|';
+  									$students = file("data.txt");
+  									$file = fopen("academics.txt", "a+");
+
+  									foreach ($students as $student) {
+								        $info = explode($delimiter, $student);
+
+								        if (!empty($info[7])) {
+								        	var_dump($student);
+								        	fputs($file, $student);
+								        	fputs($file, "\n");
+								        }
+								     
+								        
+								      }
+
+								     fclose($file);
+  									
+								?>
+
+
 							<!-- Footer -->
 								<footer id="footer">
 									<p class="copyright">&copy; Untitled. All rights reserved. Demo Images: <a href="https://unsplash.com">Unsplash</a>. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>

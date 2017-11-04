@@ -36,17 +36,8 @@
 									</header>
 									<h4>Here, you can see the nominees.</h4>
 									<p></p>
-									<h5>Nominees:</h5>
-									<ul>
-										
-										
-										
-										<li>Walt</li>
-										<li>Angel</li>
-										<li>Miriam</li>
-									</ul>
 
-									<h5>Ordered scored nominees</h5>
+									<h5>Scored Nominees:</h5>
 									<table>
 <!-- 										<tr>
 											<th>Nominee</th>
@@ -59,23 +50,35 @@
 										$delimiter = '|';
       									$students = file("data.txt");
 
+      									 print "
+									        <tr>
+											<th> Last Name, First Name  </th>
+											<th> Applying For: </th>
+											<th> </th>
+											<th> </th>
+											<th> </th>
+											
+										
+											</tr>
+											";
+
       									foreach ($students as $student) {
 									        $info = explode($delimiter, $student);
-									        
-									       
+									      
 								            
 									        print "
 									        <tr>
 											<th> $info[4], $info[3]  </th>
-											<th> $info[15] </th>
+											<th> $info[7] </th>
+											<th> $info[8] </th>
+											<th> $info[9] </th>
+											<th> $info[11] </th>
 											</tr>
 											";
 									        
 									      }
       									
 									 ?>
-
-									
 									</table>
 
 								</section>
