@@ -1,11 +1,2 @@
 First Name | Last Name | 000 000 0000 | email@email.com | NO | Why do you consider yourself as so? |  | 
 JuliaKang | jk2534@cornell.edu | 6107577410 |
-Julia | 10
-Jen | 12
-Ben | 44
-Hi | CFG
-Pizza | 1213
-Jane | 1213 
-Student | 238749
- |  |  |
-water | jk2534@cornell.edu | 6107577410 |

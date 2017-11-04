@@ -91,7 +91,7 @@
 									</form>
 								</section>
 
-							<!-- Menu -->
+						<!-- Menu -->
 								<nav id="menu">
 									<header class="major">
 										<h2>Menu</h2>
@@ -109,7 +109,7 @@
 												<li><a href="#">Athletics</a></li>
 											</ul>
 										</li>
-										<li><a href="elements.html">Analytics</a></li>
+										<li><a href="analytics.html">Analytics</a></li>
 										<li><a href="nominees.php">Student Nominees</a></li>
 										
 								</nav>
