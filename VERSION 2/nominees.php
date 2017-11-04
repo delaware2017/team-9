@@ -110,7 +110,7 @@
 												<li><a href="stem.html">STEM</a></li>
 												<li><a href="art.html">Art</a></li>
 												<li><a href="#">Community Service</a></li>
-												<li><a href="#">Athletics</a></li>
+												<li><a href="athletics.html">Athletics</a></li>
 											</ul>
 										</li>
 										<li><a href="analytics.html">Analytics</a></li>
