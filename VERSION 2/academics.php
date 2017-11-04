@@ -117,7 +117,7 @@
 											<th>1</th>
 											<th>2</th>
 											<th>3</th>
-											<th>6</th>
+											<th></th>
                       <th></th>
                     </tr>
                     <tr>
@@ -152,14 +152,15 @@
 									<ul>
 										<li><a href="rubric.html">Homepage</a></li>
 										<li><a href="nominees.php">Student Nominees</a></li>
+										<li><a href="admin.html">Admin Home</a></li>
 										<li>
 											<span class="opener">Categories</span>
 											<ul>
-												<li><a href="academics.html">Academics</a></li>
+												<li><a href="academics.php">Academics</a></li>
 												<li><a href="stem.html">STEM</a></li>
 												<li><a href="arts.html">Art</a></li>
-												<li><a href="#">Community Service</a></li>
-												<li><a href="#">Athletics</a></li>
+												<li><a href="community.html">Community Service</a></li>
+												<li><a href="athletics.html">Athletics</a></li>
 											</ul>
 										</li>
 										<li><a href="analytics.html">Analytics</a></li>
@@ -204,6 +205,66 @@
 										Nashville, TN 00000-0000</li>
 									</ul>
 								</section>
+
+
+								<?php 
+
+
+
+									$delimiter = '|';
+  									$students = file("data.txt");
+  									$aca = fopen("academics.txt", "a+");
+
+  									file_put_contents("academics.txt", "");
+
+  									foreach ($students as $student) {
+								        $info = explode($delimiter, $student);
+
+								        if (!empty($info[7])) {
+								        	var_dump($student);
+								        	fputs($file, $student);
+								        	fputs($file, "\n");
+								        }
+								     
+								        
+								      }
+
+								     fclose($file);
+								     fclose($students);
+
+								  
+								     $aca = file("academics.txt");
+
+      									 print "
+									        <tr>
+											<th> Last Name, First Name  </th>
+											<th> Applying For: </th>
+											<th> </th>
+											<th> </th>
+											<th> </th>
+											
+										
+											</tr>
+											";
+
+      									foreach ($students as $student) {
+									        $info = explode($delimiter, $student);
+									      
+								            
+									        print "
+									        <tr>
+											<th> $info[4], $info[3]  </th>
+											<th> $info[7] </th>
+											<th> $info[8] </th>
+											<th> $info[9] </th>
+											<th> $info[11] </th>
+											</tr>
+											";
+									        
+									      }
+  									
+								?>
+
 
 							<!-- Footer -->
 								<footer id="footer">
