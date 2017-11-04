@@ -35,8 +35,32 @@
 									<header class="main">
 										<h1>Student Nominees</h1>
 									</header>
+									
+									<?php 
+      
+								      $delimiter = '|';
+								      $students = file("data.txt");
 
-						
+								      $title = filter_input( INPUT_POST, 'title', FILTER_SANITIZE_STRING );
+								      $artist = filter_input( INPUT_POST, 'artist', FILTER_SANITIZE_STRING ); 
+								      $genre = filter_input(INPUT_POST, 'genre', FILTER_SANITIZE_STRING);
+								      $date = filter_input( INPUT_POST, 'date', FILTER_SANITIZE_NUMBER_INT );
+								      
+								      foreach ($students as $student) {
+									        $display = 1; //1 means TRUE and 0 means
+									        $info = explode($delimiter, $student);
+									          
+									       
+								            $first_name = $info[0];
+								            $last_name = $info[1];
+								        }
+
+								        echo $first_name;
+								        echo $last_name;
+								        
+							
+
+								    ?>
 
 								</section>
 
@@ -53,39 +77,28 @@
 										<input type="text" name="query" id="query" placeholder="Search" />
 									</form>
 								</section>
-
-							<!-- Menu -->
+							
+						<!-- Menu -->
 								<nav id="menu">
 									<header class="major">
 										<h2>Menu</h2>
 									</header>
 									<ul>
 										<li><a href="index.html">Homepage</a></li>
-										<li><a href="scores.html">Scores</a></li>
+										<li><a href="scores.php">Scores</a></li>
 										<li>
 											<span class="opener">Categories</span>
 											<ul>
-												<li><a href="elements.html">Academics</a></li>
+												<li><a href="#">Academics</a></li>
 												<li><a href="#">STEM</a></li>
 												<li><a href="#">Art</a></li>
 												<li><a href="#">Community Service</a></li>
+												<li><a href="#">Athletics</a></li>
 											</ul>
 										</li>
-										<li><a href="#">Analytics</a></li>
-										<li><a href="#">Adipiscing</a></li>
-										<li>
-											<span class="opener">Another Submenu</span>
-											<ul>
-												<li><a href="#">Lorem Dolor</a></li>
-												<li><a href="#">Ipsum Adipiscing</a></li>
-												<li><a href="#">Tempus Magna</a></li>
-												<li><a href="#">Feugiat Veroeros</a></li>
-											</ul>
-										</li>
-										<li><a href="#">Maximus Erat</a></li>
-										<li><a href="#">Sapien Mauris</a></li>
-										<li><a href="#">Amet Lacinia</a></li>
-									</ul>
+										<li><a href="elements.html">Analytics</a></li>
+										<li><a href="#">Student Nominees</a></li>
+										
 								</nav>
 
 
