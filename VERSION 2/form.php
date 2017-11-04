@@ -328,6 +328,7 @@ fieldset {
 <div class="container"> 
   <form id="contact" action="" method="get">
     <h3>General Information</h3>
+    <h4><a href="index.html"> <-- Return Home </a></h4>
     <h4><b>Please provide us with the following information regarding yourself, the <b><i> NOMINATOR.</i></b></h4>
     <fieldset>
       <input placeholder="Nominator's name (ex. John Doe)" name="nominator_name" type="text" tabindex="1" required autofocus>
