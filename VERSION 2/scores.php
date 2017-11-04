@@ -97,7 +97,7 @@
 												<li><a href="admin.html">Academics</a></li>
 												<li><a href="stem.html">STEM</a></li>
 												<li><a href="art.html">Art</a></li>
-												<li><a href="#">Community Service</a></li>
+												<li><a href="community.html">Community Service</a></li>
 												<li><a href="athletics.html">Athletics</a></li>
 											</ul>
 										</li>
