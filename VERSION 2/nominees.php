@@ -31,7 +31,7 @@
 							<!-- Content -->
 								<section>
 									<header class="main">
-										
+
 										<h1>Student Nominees</h1>
 									</header>
 									<h4>Here, you can see the nominees.</h4>
@@ -48,11 +48,11 @@
 
 									<h5>Ordered scored nominees</h5>
 									<table>
-										<tr>
+<!-- 										<tr>
 											<th>Nominee</th>
 											<th>Score</th>
 										</tr>
-										<tr>
+										<tr> -->
 
 									<?php 
 
@@ -62,13 +62,12 @@
       									foreach ($students as $student) {
 									        $info = explode($delimiter, $student);
 									        
-									        $first_name = $info[0];
-								            $last_name = $info[1];
+									       
 								            
 									        print "
 									        <tr>
-											<th> $info[0] </th>
-											<th> $info[1] </th>
+											<th> $info[4], $info[3]  </th>
+											<th> $info[15] </th>
 											</tr>
 											";
 									        
@@ -76,9 +75,7 @@
       									
 									 ?>
 
-											<th>Miriam</th>
-											<th>18</th>
-										</tr>
+									
 									</table>
 
 								</section>

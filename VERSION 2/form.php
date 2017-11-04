@@ -373,13 +373,13 @@ fieldset {
      <h4><b>Please attach a resume (accepted file types include .pdf/.doc/.docx)</b></h4>
 
     <fieldset>
-      <input type="file" id="test" name="test" accept=".pdf,.doc,.docx," required/>
+      <input type="file" id="file1" name="file1" accept=".pdf,.doc,.docx," required/>
     </fieldset>
 
     <h4><b>Please attach the most recent transcript (accepted file types include .pdf/.doc/.docx)</b></h4>
 
     <fieldset>
-      <input type="file" id="test1" name="test1" accept=".pdf,.doc,.docx," required/>
+      <input type="file" id="file2" name="file2" accept=".pdf,.doc,.docx," required/>
     </fieldset>
 
     <br>
@@ -413,7 +413,7 @@ fieldset {
     </ol>
     <br>
     <fieldset>
-      <input type="file" id="test2" name="test2" accept=".pdf,.doc,.docx," required/>
+      <input type="file" id="file3" name="file3" accept=".pdf,.doc,.docx," required/>
     </fieldset>
 
     <br>
@@ -440,10 +440,22 @@ fieldset {
         $first_name = filter_input(INPUT_POST, 'first_name', FILTER_SANITIZE_URL);
         $last_name = filter_input(INPUT_POST, 'last_name', FILTER_SANITIZE_URL);
         $email = filter_input( INPUT_POST, 'email', FILTER_SANITIZE_STRING );
-        $tel = filter_input( INPUT_POST, 'tel', FILTER_SANITIZE_STRING );
+        $tel = $_POST['tel'];
 
+        $file1 = $_POST['file1'];
+        $file2 = $_POST['file2'];
+        $file3 = $_POST['file3'];
 
-        fputs($file, "$nominator_name $delimiter $nominator_tel $delimiter $nominator_email $delimiter $first_name $delimiter $last_name $delimiter $email $delimiter $tel $delimiter\n");
+        $academic = $_POST['Academics'];
+        $athletics = $_POST['Athletics'];
+        $arts = $_POST['Arts'];
+        $stem = $_POST['STEM'];
+        $commserv = $_POST['CommServ'];
+
+        echo "$academic";
+
+        fputs($file, "$nominator_name $delimiter $nominator_tel $delimiter $nominator_email $delimiter $first_name $delimiter $last_name $delimiter $email $delimiter $tel $delimiter $academic $delimiter $athletics $delimiter $arts $delimiter $stem $delimiter $commserv $delimiter $file1 $delimiter $file2 $delimiter $file3 $delimiter \n");
+
         fclose($file);
 
         
