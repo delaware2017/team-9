@@ -32,7 +32,7 @@
 										<h1>Academics</h1>
 									</header>
 
-										<h4>Here are academics nominees and their scores. The academic rubric is further below.</h4>
+										<h4>Here are academics nominees and their scores. The academic rubric is further below. <a href="#"> Enter/Update Scores</a></h4> 
 									<p></p>
 
 
