@@ -37,9 +37,6 @@
 									<p></p>
 									<h5>Nominees:</h5>
 									<ul>
-										
-										
-										
 										<li>Walt</li>
 										<li>Angel</li>
 										<li>Miriam</li>
